@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<launch>
+    <node name="register_cloud" pkg="perception" type="run_apps"
+          args="crown.pcd s1.pcd" output="screen">
+        <rosparam>
+          <!-- shared -->
+          data_path: "/home/mostafa/staubli_vision_ws/src/perception/data/complete_crown_scan"
+          type_reg_algorithm: 1 <!-- 0:icp 1:prerejective -->
+          is_reduce_noise: false
+          is_duplicate_source: false
+          voxel_grid_leaf_size: 0.5 <!-- mm -->
+          norm_est_k_search_val: 10
+          max_corresp_size_init: 10 <!-- Set the maximum distance between two correspondences (src<->tgt) to a value (m) -->
+          total_iterations: 50
+          trans_epsilon: 0.0000001
+          max_sub_iteration: 1000
+          is_set_eucl_fit_epsl: true
+          euclidean_fitness_epsilon: 0.000001
+          <!-- prerejective -->
+          num_samples: 3
+          corresp_randomness: 5
+          similarity_thresh: 0.9
+        </rosparam>
+    </node>
+</launch>

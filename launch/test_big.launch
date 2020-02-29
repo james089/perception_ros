@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<launch>
+    <node name="register_cloud" pkg="perception" type="run_apps"
+          args="c_big1.pcd c_big2.pcd" output="screen">
+        <rosparam>
+          data_path: "/home/mostafa/staubli_vision_ws/src/perception/data"
+          voxel_grid_leaf_size: 0.5 <!-- mm -->
+          norm_est_k_search_val: 50
+          max_corresp_size_init: 1 <!-- Set the maximum distance between two correspondences (src<->tgt) to a value (m) -->
+          max_corresp_size_drop_step: 0.01
+          trans_epsilon: 0.00000001
+          max_sub_iteration: 5
+          total_iterations: 500
+        </rosparam>
+    </node>
+</launch>

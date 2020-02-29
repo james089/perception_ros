@@ -1,0 +1,27 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/mostafa/catkin_ws2/devel/include/**",
+        "/home/mostafa/catkin_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/mostafa/catkin_ws2/src/action_server/include/**",
+        "/home/mostafa/catkin_ws2/src/beckhoff_ads/include/**",
+        "/home/mostafa/catkin_ws2/src/image_server/include/**",
+        "/home/mostafa/catkin_ws2/src/librealsense/include/**",
+        "/home/mostafa/catkin_ws2/src/my_robot_auto/include/**",
+        "/home/mostafa/staubli_vision_ws/src/perception/include/**",
+        "/home/mostafa/catkin_ws2/src/realsense-ros/realsense2_camera/include/**",
+        "/home/mostafa/catkin_ws2/src/staubli/staubli_move_group_interface/include/**",
+        "/home/mostafa/catkin_ws/src/universal_robot/ur_kinematics/include/**",
+        "/home/mostafa/catkin_ws/src/universal_robot/ur_modern_driver/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ]
+}

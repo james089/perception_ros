@@ -1,0 +1,8 @@
+
+register big crown: 
+    roslaunch perception test_big.launch
+run pcl converter sample:
+    rosrun perception pcl_converter -f ascii -c --cloud /home/mostafa/staubli_vision_ws/src/perception/data/complete_crown_scan/crown.stl /home/mostafa/staubli_vision_ws/src/perception/data/complete_crown_scan/crown.pcd
+
+run prerejective sample:
+    rosrun perception prerejective_align complete_crown_scan/s1.pcd complete_crown_scan/crown.pcd
